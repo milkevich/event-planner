@@ -1,0 +1,9 @@
+.newTaskContainer {
+ display: block;
+}
+
+@media only screen and (max-width: 1460px) {
+    .newTaskContainer {
+        display: none;
+    }
+}

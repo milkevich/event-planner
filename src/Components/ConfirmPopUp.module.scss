@@ -1,0 +1,59 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.popUpContainer {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0px 20px 20px 20px;
+    max-width: 300px;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.popUpContainer h1 {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.popUpContainer p {
+    color: #666;
+    margin-top: -10px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonContainer button {
+    padding: 10px 15px 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    background-color: var(--highlight-bg-color);
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buttonContainer .deleteBtn {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.106);
+}
+
+.buttonContainer button:hover {
+    transform: scale(0.9);
+}

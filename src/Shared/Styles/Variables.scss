@@ -1,0 +1,34 @@
+:root {
+    --main-bg-color : rgb(34, 34, 34);
+    --main-color: rgb(255, 255, 255);
+    --button-bg-color: rgb(44, 44, 44);
+    --button-color: rgb(255, 255, 255);
+    --button-bg-hover-color: rgb(54, 54, 54);
+    --highlight-bg-color: rgb(44, 44, 44);
+    --highlight-color: rgb(255, 255, 255);
+    --border-radius: 10px;
+    --border-color: rgb(54, 54, 54);
+    background-color: var(--main-bg-color);
+}
+
+.light {
+    --main-bg-color : rgb(255, 255, 255);
+    --main-color: rgb(34, 34, 34);
+    --button-bg-color: rgb(34, 34, 34);
+    --button-color: rgb(255, 255, 255);
+    --button-bg-hover-color: rgb(44, 44, 44);
+    --highlight-bg-color: rgb(245, 245, 245);
+    --highlight-color: rgb(255, 255, 255);
+    --border-radius: 10px;
+    --border-color: rgb(230, 230, 230);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none;
+}

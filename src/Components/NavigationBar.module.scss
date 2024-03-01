@@ -1,0 +1,147 @@
+.section {
+    width: 75px;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    z-index: 1005;
+}
+
+.sectionButton {
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.sectionButtonAdd {
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: none;
+}
+
+.sectionButtonBottom {
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.sectionButtonBottom:hover {
+    background-color: var(--highlight-bg-color);
+    transform: scale(0.8);
+}
+
+.selected {
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+}
+
+.sectionTopContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionBottomContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.pagesContainer {
+    max-width: 1430px;
+    margin: auto;
+}
+
+
+.menuBtn {
+    border: 1px solid var(--border-color);
+    outline: none;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    display: none;
+}
+
+.backdrop {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1460px) {
+    .sectionButtonAdd {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .section {
+        position: fixed;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menuBtn {
+        display: block;
+        position: absolute;
+        left: 90px;
+        top: 20px;
+    }
+
+    .backdrop {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        display: flex;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000000;
+        overflow: hidden;
+    }
+
+    .pagesContainer {
+        max-width: 325px;
+        margin: auto;
+        height: 100vh;
+    } 
+}
